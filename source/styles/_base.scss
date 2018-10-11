@@ -1,0 +1,32 @@
+.body--reset {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto;
+  width: 100vw;
+
+  @include mediumUp {
+    grid-template-columns: 80px auto;
+  }
+}
+
+.paragraph--reset {
+  color: $grey-color;
+  @include mediumUp {
+    font-size: 20px;
+  }
+}
+
+.footer {
+  background-color: $grey-color;
+  height: 85px;
+  margin: 60px auto 0;
+  @include mediumUp {
+    width: calc(100% - 120px);
+    margin: 60px 60px 0;
+  }
+}

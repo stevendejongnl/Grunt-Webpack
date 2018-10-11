@@ -1,0 +1,34 @@
+.section {
+  &__contact-form {
+    @include mediumUp {
+      padding: 0 60px;
+    }
+    .form {
+      &__field {
+      }
+      &__input,
+      &__textarea {
+        width: 100%;
+        padding: 0;
+        border: none;
+        background-color: $form-color;
+        margin-bottom: 15px;
+      }
+      &__input {
+        height: 40px;
+        @include mediumUp {
+          height: 60px;
+        }
+      }
+      &__textarea {
+        height: 100px;
+        @include mediumUp {
+          height: 300px;
+        }
+      }
+      &__submit {
+        text-align: right;
+      }
+    }
+  }
+}

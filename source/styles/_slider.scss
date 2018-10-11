@@ -1,0 +1,25 @@
+.image-slider {
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 11px;
+    @include mediumUp {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__item {
+    &:first-of-type {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-column-end: 3;
+      @include mediumUp {
+        grid-column-end: 5;
+      }
+    }
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+}

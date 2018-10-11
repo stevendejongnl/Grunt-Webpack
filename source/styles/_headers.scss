@@ -1,0 +1,17 @@
+.headers {
+  color: $grey-color;
+  &__first {
+    @include mediumUp {
+      font-size: 45px;
+    }
+  }
+  &__second {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    @include mediumUp {
+      font-size: 35px;
+      margin-bottom: 60px;
+    }
+  }
+}

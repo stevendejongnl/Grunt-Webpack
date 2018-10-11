@@ -1,0 +1,14 @@
+.column {
+  &__wrapper {
+    align-items: center;
+    @include mediumUp {
+      display: grid;
+      grid-column-gap: 15px;
+      grid-row-gap: 11px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__right {
+    text-align: center;
+  }
+}

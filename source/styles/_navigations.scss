@@ -1,0 +1,51 @@
+.sidebar {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  background-color: $grey-color;
+
+  @include smallOnly {
+    display: grid;
+    grid-template-columns: 80px auto;
+    .logo {
+      grid-column-start: 1;
+      grid-row-start: 1;
+    }
+    .navigation {
+      grid-column-start: 2;
+      grid-row-start: 1;
+    }
+  }
+}
+
+.navigation {
+  @include smallOnly {
+    width: calc(100vw - 80px);
+    overflow-x: scroll;
+  }
+  &--reset {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  &--mobile-list {
+    @include smallOnly {
+      display: inline-block;
+      width: 100%;
+      min-width: 370px;
+      height: 80px;
+    }
+  }
+  &__item {
+    width: 45px;
+    height: 45px;
+    border: solid 2px $form-color;
+    @include smallOnly {
+      display: inline-block;
+      margin: 18px 10px 0;
+    }
+    @include mediumUp {
+      margin: 15px auto;
+    }
+  }
+}
