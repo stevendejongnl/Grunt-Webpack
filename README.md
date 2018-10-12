@@ -2,7 +2,10 @@
 
 ## This version works with Webpack
 
+## Preparation
+- Install node with npm (prefer via [nvm](https://github.com/creationix/nvm) else install normal [nodejs.org](https://nodejs.org/en/)) 
+
 ## How to use:
-- ```npm install```
-- ```npm run start``` for development
-- ```npm run build``` for production
+- run ```npm install``` to install dependencies
+- run ```npm run start``` for development
+- run ```npm run build``` for production
