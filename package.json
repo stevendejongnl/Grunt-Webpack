@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/stevendejongnl/Grunt-Webpack/issues"
   },
-  "homepage": "https://github.com/stevendejongnl/Grunt-Webpack#readme"
+  "homepage": "https://github.com/stevendejongnl/Grunt-Webpack#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
 }
